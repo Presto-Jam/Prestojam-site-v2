@@ -1,0 +1,40 @@
+#hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+
+    /*gradient text*/
+    background: linear-gradient(180deg, #ffffff, #949494 130%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto auto 20px;
+
+    align-items: flex-start;
+
+    width: 20%;
+
+    /*background blur backdrop*/
+    background: #ffffff;
+
+    transition: 0.2s;
+}
+.pack:hover {
+    background: #ffffff;
+    scale: 103%;
+    box-shadow: 0px 0px 10px 0px var(--dark-blue-1);
+}
+
+.pack > h1 {
+    color: var(--dark-blue-0);
+    font-size: 20px;
+}

@@ -1,0 +1,40 @@
+#game {
+/*    center*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    width: 100%;
+    height: 100%;
+}
+input {
+    font-family: 'Space Grotesk', monospace !important;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+#gts-text-container {
+    width: fit-content;
+    height: fit-content;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    border: 3px solid var(--dark-blue-0);
+    transition: 0.2s;
+}
+#gts-text-container:hover {
+    border: 3px solid var(--dark-blue-1);
+    transition: 0.2s;
+}
