@@ -1,3 +1,52 @@
+h1 {
+    margin: 20px 10px 10px;
+}
+#warning {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    background: #ff4b4b;
+    color: #ffffff;
+
+    position: absolute;
+    width: fit-content;
+
+    display: none;
+}
+#warning > #warning-text {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+}
+#fullscr {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+
+    position: absolute;
+    display: none;
+
+    z-index: 5;
+}
+#centeringDiv {
+    margin: auto;
+    padding: 0;
+}
+#fullscr-text {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+#desc {
+    max-width: 60%;
+    text-align: center;
+}
 #game {
 /*    center*/
     display: flex;
@@ -19,6 +68,22 @@ input {
     outline: none;
     background: none;
 }
+#statusItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#level {
+    border-radius: 9999px;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #ffffff;
+}
+#level > p {
+    margin: 0;
+}
+
 #gts-text-container {
     width: fit-content;
     height: fit-content;
@@ -34,7 +99,6 @@ input {
     border: 3px solid var(--dark-blue-0);
     transition: 0.2s;
 }
-#gts-text-container:hover {
-    border: 3px solid var(--dark-blue-1);
-    transition: 0.2s;
+#gts-text {
+    margin: 10px;
 }

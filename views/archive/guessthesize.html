@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Font Size</title>
+    <link rel="stylesheet" href="../../public/stylesheets/styles.css" />
+    <link rel="stylesheet" href="../../public/stylesheets/guessthesize.css" />
+</head>
+<body>
+    <div id="warning">
+        <p id="warning-text"></p>
+    </div>
+    <div id="fullscr">
+        <div id="centeringDiv">
+            <p id="fullscr-text"></p>
+            <p style="text-align: center;">Click anywhere to continue</p>
+        </div>
+    </div>
+    <p id="goback"><a href="../archive.html">< Back to the Archive</a></p>
+    <h1>Welcome to Guess The Font Size!</h1>
+    <div id="game">
+        <p id="desc">Guess the font size of the text below. It is between 1 & 100 pixels and will be a multiple of a number from 1-10.
+        You can find what multiple it is of below (mul. of __). Good luck!</p>
+        <div id="statusItems">
+            <div id="level">
+                <p id="level-text"></p>
+            </div>
+            <p id="tries-text"></p>
+        </div>
+
+        <div id="gts-text-container">
+            <p id="gts-text"></p>
+            <p>Guess the size of the text above</p>
+        </div>
+
+        <input type="number" id="GTSinput" placeholder="Enter your guess in pixels here">
+        <button class="button-primary" id="GTSbutton" onclick="validate()">Check</button>
+    </div>
+    <script src="../../public/javascripts/guessthesize.js"></script>
+</body>
+</html>

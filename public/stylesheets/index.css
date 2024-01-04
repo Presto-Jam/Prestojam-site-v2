@@ -1,5 +1,8 @@
 
 /*feature tag for hero*/
+#tag-text {
+    border-bottom: 0 transparent !important;
+}
 #feature-tag {
     height: 30px;
     width: 200px;
@@ -21,7 +24,6 @@
 }
 #feature-tag > p {
     font-size: 15px;
-    border-bottom: 0 transparent !important;
 }
 
 /*hero*/
