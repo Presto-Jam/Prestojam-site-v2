@@ -19,6 +19,17 @@ h1 {
     font-family: "Space Grotesk", sans-serif;
     font-weight: bold;
 }
+#warning > #warning-button {
+    display: none;
+    margin: 10px;
+    background: #ffffff;
+    color: #ff5353;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+
+    border: none;
+}
 #fullscr {
     width: 100vw;
     height: 100vh;
