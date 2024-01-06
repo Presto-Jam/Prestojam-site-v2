@@ -94,6 +94,9 @@ input {
 #level > p {
     margin: 0;
 }
+#statusItems > p {
+    margin: 10px;
+}
 
 #gts-text-container {
     width: fit-content;

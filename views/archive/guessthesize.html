@@ -17,7 +17,7 @@
             <p style="text-align: center;">Click anywhere to continue</p>
         </div>
     </div>
-    <p id="goback"><a href="../archive.html">< Back to the Archive</a></p>
+<!--    <p id="goback"><a href="../archive.html">< Back to the Archive</a></p>-->
     <h1>Welcome to Guess The Font Size!</h1>
     <div id="game">
         <p id="desc">Guess the font size of the text below. It is between 1 & 100 pixels and will be a multiple of a number from 1-10.
@@ -27,6 +27,7 @@
                 <p id="level-text"></p>
             </div>
             <p id="tries-text"></p>
+            <p id="timer-text"></p>
         </div>
 
         <div id="gts-text-container">
@@ -36,6 +37,7 @@
 
         <input type="number" id="GTSinput" placeholder="Enter your guess in pixels here">
         <button class="button-primary" id="GTSbutton" onclick="validate()">Check</button>
+        <button style="margin: 10px;" id="Debug-pass" onclick="debugmode()">Debug</button>
     </div>
     <script src="../../public/javascripts/guessthesize.js"></script>
 </body>
