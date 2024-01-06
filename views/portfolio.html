@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Kingston's portfolio</title>
-    <link rel="stylesheet" href="../public/stylesheets/styles.css" />
-    <link rel="stylesheet" href="../public/stylesheets/portfolio.css" />
-    <script src="../public/javascripts/portfolio.js"></script>
+    <link rel="stylesheet" href="../src/stylesheets/styles.css" />
+    <link rel="stylesheet" href="../src/stylesheets/portfolio.css" />
+    <script src="../src/javascripts/portfolio.js"></script>
 </head>
 <body>
 <div class="container" id="pinPage">
@@ -14,11 +14,11 @@
         <p>You're entering a password protected zone! Please enter the pin provided to you
             to continue.</p>
         <form id="pin-entry" action="/portfolio" method="post">
-            <input type="number" id="box1" onkeyup="validate(1)" onpaste="return stopPaste()">
-            <input type="number" id="box2" onkeyup="validate(2)" onpaste="return stopPaste()">
-            <input type="number" id="box3" onkeyup="validate(3)" onpaste="return stopPaste()">
-            <input type="number" id="box4" onkeyup="validate(4)" onpaste="return stopPaste()">
-            <input type="number" id="box5" onkeyup="validate(5)" onpaste="return stopPaste()">
+            <label for="box1"></label><input type="number" id="box1" onkeyup="validate(1)" onpaste="return stopPaste()">
+            <label for="box2"></label><input type="number" id="box2" onkeyup="validate(2)" onpaste="return stopPaste()">
+            <label for="box3"></label><input type="number" id="box3" onkeyup="validate(3)" onpaste="return stopPaste()">
+            <label for="box4"></label><input type="number" id="box4" onkeyup="validate(4)" onpaste="return stopPaste()">
+            <label for="box5"></label><input type="number" id="box5" onkeyup="validate(5)" onpaste="return stopPaste()">
         </form>
     </div>
 </div>
