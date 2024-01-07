@@ -1,0 +1,56 @@
+#success {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    background: #22ff89;
+    color: #ffffff;
+
+    position: absolute;
+    width: fit-content;
+
+    display: none;
+}
+#success > #success-text {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+}
+
+#game {
+    width: 80%;
+    height: 80%;
+
+    margin: auto;
+    padding: 0;
+}
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: fit-content;
+}
+.card {
+    border-radius: 5px;
+    background: #000000;
+
+    aspect-ratio: 1/1;
+    width: 100px;
+
+    margin: 10px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-text {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 20px;
+    color: #ffffff;
+
+    display: block;
+}
