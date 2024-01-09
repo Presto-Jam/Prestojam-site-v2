@@ -1,6 +1,28 @@
 h1 {
     margin: 20px 10px 10px;
 }
+
+#statusItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#level {
+    border-radius: 9999px;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #ffffff;
+    /*default background color*/
+    background-color: #000000;
+}
+#level > p {
+    margin: 0;
+}
+#statusItems > p {
+    margin: 10px;
+}
+
 #warning {
     margin: 0;
     padding: 10px;
@@ -56,6 +78,9 @@ h1 {
 
 #desc {
     max-width: 60%;
+    align-items: center;
+}
+#desc > p {
     text-align: center;
 }
 #goback {

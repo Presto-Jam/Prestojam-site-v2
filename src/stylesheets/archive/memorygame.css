@@ -51,6 +51,7 @@
     font-family: 'Space Grotesk', monospace;
     font-size: 20px;
     color: #ffffff;
+    margin:0;
 
     display: block;
 }

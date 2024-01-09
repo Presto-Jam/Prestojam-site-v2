@@ -19,24 +19,6 @@ input {
     outline: none;
     background: none;
 }
-#statusItems {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-#level {
-    border-radius: 9999px;
-    padding: 5px 10px;
-    margin: 10px;
-    color: #ffffff;
-}
-#level > p {
-    margin: 0;
-}
-#statusItems > p {
-    margin: 10px;
-}
 
 #gts-text-container {
     width: fit-content;
