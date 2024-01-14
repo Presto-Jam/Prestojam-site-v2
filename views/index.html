@@ -3,32 +3,58 @@
 <head>
     <meta charset="utf-8" />
     <title>Prestojam home</title>
-    <link rel="stylesheet" href="../stylesheets/styles.css" />
-    <link rel="stylesheet" href="../stylesheets/index.css" />
-<!--    <script src="../src/javascripts/main.js"></script>-->
-<!--    I-->
+    <link rel="stylesheet" href="../src/stylesheets/styles.css" />
+    <link rel="stylesheet" href="../src/stylesheets/index.css" />
 </head>
 <!--<nav-bar></nav-bar>-->
-<body class="dark-mode">
-    <div id="radial-gradient"></div>
+<body id="index-background">
+<!--    <div id="radial-gradient"></div>-->
     <div class="container">
         <!--hero-->
-        <div id="hero">
+        <div id="hero" class="section">
             <div id="feature-tag">
                 <p><a id="tag-text" href="../views/archive.html">Featured: The Archive</a></p>
             </div>
-            <h1 id="hero-title">This is not a professional company website.</h1>
-            <p id="hero-subtitle">The creator of this website wasn't really good at designing styles for non-company websites</p>
+            <h1 id="hero-title">This is PrestoJam. A jumble of nonsense.</h1>
+            <p id="hero-subtitle">An archive of what I ever bothered to do on the web. Well, not all, but most. Some
+            are just so nonsensical that even I didn't understand them, and those, sadly, didn't make the shot.</p>
 
             <div style = "height: 50px;"></div>
 
-            <button class="button-primary" onclick="window.location.href = '../views/archive.html'">Teleport to the online archive</button>
+            <button class="button-primary keep-color" onclick="window.location.href = '../views/archive.html'">Teleport to the online archive</button>
         </div>
 
-<!--        <p><i>(If you're here procrastinating,-->
-<!--            as much as I enjoy doing so, please get back to your work for the sake of your mental well-being in the-->
-<!--            future...)</i></p>-->
-        <h2 style="text-align: center">Prestojam map</h2>
+        <!-- ONE -->
+        <div class="section">
+            <div class="section-title">
+                <h2>one</h2>
+                <div class="line"></div>
+                <h1>Salutations</h1>
+            </div>
+            <div class="section-content">
+                <p>This website is a personal project of mine. It is a website that I use to test out new things that
+                    I learn about web development. It is also a place where I can store my projects and other things
+                    that I have made. You can probably find all those things in The Archive (link below),
+                    but in case it isn't there, you can prowl around this site to find it!</p>
+            </div>
+        </div>
+
+        <!-- TWO -->
+        <div class="section">
+            <div class="section-title">
+                <h2>two</h2>
+                <div class="line"></div>
+                <h1>The happenings that led.</h1>
+            </div>
+            <div class="section-content">
+                <p>The reason this site exists is because I was bored. Just like most of my other projects, I was bored,
+                    and wanted to try something new. So, this site exists as a collection of all the things I have done,
+                    some stupid, some buggy, some interesting, and mostly just downright weird. I hope you have a fun
+                    time looking around!</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; font-family: 'Playfair Display', serif">Prestojam map</h2>
         <div class="useful-links">
             <div class="link-box">
                 <div class="left">
@@ -61,4 +87,7 @@
         </div>
     </div>
 </body>
+
+<script src="../src/javascripts/main.js"></script>
+
 </html>
