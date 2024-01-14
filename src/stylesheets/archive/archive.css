@@ -78,11 +78,10 @@ h1 {
 
 #desc {
     max-width: 60%;
-    align-items: center;
-}
-#desc > p {
+    margin: auto;
     text-align: center;
 }
+
 #goback {
     margin: 20px;
     padding: 10px;
