@@ -1,43 +1,42 @@
-// ---- CREDITS ----
-// thx to DecodedFinn for this code :D
-// I modified the code for loading HTML to load all HTML files instead of only index.html
-
 const express = require('express');
 const path = require('path');
 
 const app = express();
 const port = 3000; // Set the port number you want to use
 
-// HTML files
-app.get('/views/:file', (req, res) => {
+// INDEX.HTML
+app.get('/:file', (req, res) => {
     var file = req.params["file"]
     res.sendFile(path.join(__dirname, `views/${file}`));
-});
-app.get('/views/archive/:file', (req, res) => {
-    var file = req.params["file"]
-    res.sendFile(path.join(__dirname, `views/archive/${file}`));
-});
+})
+app.get('/index.html', (req, res) => {
+    res.sendFile(path.join(__dirname, `views/index.html`));
+})
 
-// JS files
+app.get('/javascripts/layouts/:file', (req,res) => {
+    var file = req.params["file"]
+    res.sendFile(path.join(__dirname, `src/javascripts/layouts/${file}`))
+})
+
 app.get('/javascripts/:file', (req,res) => {
     var file = req.params["file"]
     res.sendFile(path.join(__dirname, `src/javascripts/${file}`))
 })
+
 app.get('/javascripts/archive/:file', (req,res) => {
     var file = req.params["file"]
-    res.sendFile(path.join(__dirname, `src/javascripts/${file}`))
+    res.sendFile(path.join(__dirname, `src/javascripts/archive/${file}`))
 })
 
-// CSS files
 app.get('/stylesheets/:file', (req,res) => {
     var file = req.params["file"]
     res.sendFile(path.join(__dirname, `src/stylesheets/${file}`))
 })
+
 app.get('/stylesheets/archive/:file', (req,res) => {
     var file = req.params["file"]
-    res.sendFile(path.join(__dirname, `src/stylesheets/${file}`))
+    res.sendFile(path.join(__dirname, `src/stylesheets/archive/${file}`))
 })
-
 
 // Start the server
 app.listen(port, () => {
