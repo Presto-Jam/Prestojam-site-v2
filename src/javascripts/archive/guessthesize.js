@@ -228,7 +228,9 @@ function validate() {
                 triesLeftText.innerHTML = "Tries left: " + triesLeft;
 
                 numbersGuessed.push(input);
-                timer("reset");
+                if(level >= 5) {
+                    timer("reset");
+                }
             }
         } else if(triesLeft <= 0) {
             warn("You have no more tries left :(. Better luck next time!", "alert", "Play again", "reset");
